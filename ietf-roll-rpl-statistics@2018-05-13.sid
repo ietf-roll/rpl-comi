@@ -1,0 +1,17 @@
+{
+  "assignment-ranges": [
+    {
+      "entry-point": 1001200,
+      "size": 50
+    }
+  ],
+  "module-name": "ietf-roll-rpl-statistics",
+  "module-revision": "2018-05-13",
+  "items": [
+    {
+      "namespace": "module",
+      "identifier": "ietf-roll-rpl-statistics",
+      "sid": 1001200
+    }
+  ]
+}
