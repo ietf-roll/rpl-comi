@@ -109,8 +109,8 @@ the following registration is requested:
 
 ## The SID registry
 
-The SID range 1001100 was allocated by comi.space to the IETF-ROLL-RPL-STATISTICS
-yang module.
+The SID range 1001200 was allocated by comi.space to the
+IETF-ROLL-RPL-STATISTICS yang module.
 
 # Acknowledgements
 
