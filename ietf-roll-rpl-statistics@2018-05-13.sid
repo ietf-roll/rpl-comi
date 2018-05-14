@@ -1,17 +1,32 @@
 {
   "assignment-ranges": [
     {
-      "entry-point": 1001200,
+      "entry-point": 1001200, 
       "size": 50
     }
-  ],
-  "module-name": "ietf-roll-rpl-statistics",
-  "module-revision": "2018-05-13",
+  ], 
+  "module-name": "ietf-roll-rpl-statistics", 
+  "module-revision": "2018-05-13", 
   "items": [
     {
-      "namespace": "module",
-      "identifier": "ietf-roll-rpl-statistics",
+      "namespace": "module", 
+      "identifier": "ietf-inet-types", 
+      "sid": 1001201
+    }, 
+    {
+      "namespace": "module", 
+      "identifier": "ietf-roll-rpl-statistics", 
       "sid": 1001200
+    }, 
+    {
+      "namespace": "data", 
+      "identifier": "/ietf-roll-rpl-statistics:roll-rpl-statistic/ietf-roll-rpl-statistics:rpl-statistics", 
+      "sid": 1001202
+    }, 
+    {
+      "namespace": "data", 
+      "identifier": "/ietf-roll-rpl-statistics:roll-rpl-statistic/ietf-roll-rpl-statistics:rpl-statistics/parent-node", 
+      "sid": 1001203
     }
   ]
 }
