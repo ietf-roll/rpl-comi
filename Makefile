@@ -41,7 +41,7 @@ ${CWTSIDLIST1} ${CWTSIDDATE1}: ${CWTDATE1}
 	${PYANG} --list-sid --update-sid-file ${CWTSIDDATE1} ${CWTDATE1} | ./truncate-sid-table >rpl-comi-sid.txt
 
 boot-sid1:
-	${PYANG} --list-sid --generate-sid-file 1001100:50 ${CWTDATE1}
+	${PYANG} --list-sid --generate-sid-file 1001200:50 ${CWTDATE1}
 
 version:
 	echo Version: ${VERSION}
