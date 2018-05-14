@@ -1,9 +1,9 @@
 DRAFT:=rpl-comi
 VERSION:=$(shell ./getver ${DRAFT}.mkd )
 YANGDATE=2018-05-13
-CWTDATE1=yang/ietf-rpl-comi@${YANGDATE}.yang
-CWTSIDDATE1=ietf-rpl-comi@${YANGDATE}.sid
-CWTSIDLIST1=ietf-rpl-comi-sid.txt
+CWTDATE1=yang/ietf-roll-rpl-statistics@${YANGDATE}.yang
+CWTSIDDATE1=ietf-roll-rpl-statistics@${YANGDATE}.sid
+CWTSIDLIST1=ietf-roll-rpl-statistics-sid.txt
 PYANG=./pyang.sh
 
 # git clone this from https://github.com/mbj4668/pyang.git
@@ -16,14 +16,14 @@ ${DRAFT}-${VERSION}.txt: ${DRAFT}.txt
 	cp ${DRAFT}.txt ${DRAFT}-${VERSION}.txt
 	: git add ${DRAFT}-${VERSION}.txt ${DRAFT}.txt
 
-${CWTDATE1}: ietf-rpl-comi.yang
+${CWTDATE1}: ietf-roll-rpl-statistics.yang
 	mkdir -p yang
-	sed -e"s/YYYY-MM-DD/${YANGDATE}/" ietf-rpl-comi.yang > ${CWTDATE1}
+	sed -e"s/YYYY-MM-DD/${YANGDATE}/" ietf-roll-rpl-statistics.yang > ${CWTDATE1}
 
 rpl-comi-tree.txt: ${CWTDATE1}
 	${PYANG} -f tree --tree-print-groupings --tree-line-length=70 ${CWTDATE1} > rpl-comi-tree.txt
 
-%.xml: %.mkd ${CWTDATE1} rpl-comi-tree.txt ${CWTSIDLIST1} 
+%.xml: %.mkd ${CWTDATE1} rpl-comi-tree.txt ${CWTSIDLIST1}
 	kramdown-rfc2629 ${DRAFT}.mkd | ./insert-figures >${DRAFT}.xml
 	: git add ${DRAFT}.xml
 
@@ -47,6 +47,6 @@ version:
 	echo Version: ${VERSION}
 
 clean:
-	-rm -f ${DRAFT}.xml ${CWTDATE1} 
+	-rm -f ${DRAFT}.xml ${CWTDATE1}
 
 .PRECIOUS: ${DRAFT}.xml
