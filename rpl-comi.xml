@@ -104,7 +104,6 @@ module: ietf-roll-rpl-statistics
   1001200 module ietf-roll-rpl-statistics
   1001202 data .../ietf-roll-rpl-statistics:rpl-statistics
   1001203 data .../parent-node
-           
 ]]></artwork>
 </figure></t>
 
@@ -138,8 +137,8 @@ the following registration is requested:</t>
 </section>
 <section anchor="the-sid-registry" title="The SID registry">
 
-<t>The SID range 1001100 was allocated by comi.space to the IETF-ROLL-RPL-STATISTICS
-yang module.</t>
+<t>The SID range 1001200 was allocated by comi.space to the
+IETF-ROLL-RPL-STATISTICS yang module.</t>
 
 </section>
 </section>
@@ -180,13 +179,13 @@ yang module.</t>
   </back>
 
 <!-- ##markdown-source:
-H4sIAAWn+VoAA41WXY8TNxR996+42n0BdSfNrspKjFBF2GQhUrLZJqFAq2rl
-zHgSdz12ansSUsR/77mebDZAqzISYGzfr3PPuU6WZSLqaFRO09sR1dLKpaqV
+H4sIAPyn+VoAA41WXW8bNxB8569Y2C8J6lNlozGQQ1BEseREgGS5ktIkLQqD
+uuNJrHmkSvKkqEH+e2d5sqwkLRo9JDTJ/ZqdWV6WZSLqaFRO09sR1dLKpaqV
 jRSijDpEXQTSlq4m4yFVztcyCrlYeLXJya9NVrhai9IVVtZwUXpZxczrYiV9
 GZzNvDMme7iXdbtCnLJjW95J4ywsom+UEHrt0zLEi273efdCSK9kTkMblbcq
 iu0yp0tkU6zonfP32i7ptXfNWtxvH29lfY4uChlzZFw5IQpX4mpOTchkKLQW
-a50TvlMqpMWuIum93NETXZE0hnYqPCXnaSXDilbKK0EUXZHzAZbB+ehVFfLk
-olSVbEwMuPFwvqvbY/6vkE1cOZ8LITKkg91xh6YHZHC9hWzMW8p8eeQ8sp4B
+a50TfqdUSItdRdJ7uaMnuiJpDO1UeErO00qGFa2UV4IouiLnAyyD89GrKuTJ
+Rakq2ZgYcOPhfFe3x/ynkE1cOZ8LITKkg91xh6YHZHC9hWzMW8p8eeQ8sp4B
 JmXQEZq5Km4BSSqeI6laapNTXfgftIrVy/BwtVNIxMtoH/K2QxvYl8rTLLp7
 PtmHvVUA7dvDFHjD3nzAHhXOBhQpbbFL5/vAR9svH293YC2ETSTRG5Uj0en1
 1cX5+fP98vLZsy4vh1m/w3mDFV5lO2mXWbFgrL4+Crr8dtMt/lRFzIIqGq/j
@@ -197,21 +196,21 @@ siWfwK+yQS+M6rQV1rosjWLVQSXelU0RNRgm+tz+WlvOsA3pcdSAYg5S4Gz2
 V1Od/Um/95pVAQlQJT3ItXFmg/i4uAYiUfqdKGWUqM4Y1VrWCoy2OtRcRgKY
 PaxkvYayUuql2ijj1glzxMWMqGG30aGRRv8tU6rRORPOaLuCPpIDr5h6cICp
 hLWSvoBUeUhtFEBbwmxf1EKt5Ea7xrNzZ82OpAg1C9029UKlbV2vTZp3KRoC
-QWrKsu/GYgaZ1AcKum5MukHKbrR3lk0CQB6jpR3Gd57wdMYtd3T4Pp0ebX9m
-minwyBi3TTniDK0D6C3hUkkdfOxvqv5qtE+pBRqBwQ0GMxz6qmBFwdnQosoj
-2p6lou/VjrYOg4ROxm9n85Oz9l+6maT1dPDL2+F00D85EyezN73RiDfT4uHG
-7M3k7aj/uHq0BJXHg5v+IB2Oex/gg3l3MrmdDyc3vdFJqgV9XShUgurW0Auq
-QtNKFQqvF22Jr65u6fynM54IxLWIT5/2c+Lz55bJttQY4wr9PYBAhskSkgxB
-lLXREpuzeXOr++KrLiYAk2bGk/5glGy+1KsQT54M+qhsgLciabGxhVFM7Yph
-RB3YqxrPaxr2bnoM6v3Tp/B8Sr+6hjmXegTOoeyoqzRHTnE6x6ShfjtphHhR
-6SV09bMY3swG0/ndfPB+fnc9nYzvroejweENTfOpEzEXgLB48eODVfIIiWMo
-m4afle/1h9H5X+5aZKBwngyzAyb5dzt/2e/NBx0eq9+4b7G6QhM0XoW2HQmz
-wxhrA9MNnqEABJcIjuHx1QT2aZ9l/TiDYZV+isR/8yT83hP9zg9N96L7B6bO
-9aPWkvL4kTgW2+Fu0o6IX8hz77GVvQ6JjOi2wpMkWnm3T+nDl56cww+eI649
-Xg5rWbQWjbc5G+RrmR6kj7XJ8WIzpvn/OMJvDPDT7h2xiN7jO4DMZPFHsO53
-4FjRebd7jj+0hSQxB12RHpHFjhWlOyk71i/jMBzMr7PpZDTKoJxsNu/Nh7P5
-8GomUtvbdiSd9Yp767ZGle3vRnT7nUqDYKPQDYggqqox7PZ9EveH9PdvyfZq
-xWlhOArxD/dTun2JCgAA
+QWrKsu/GYgaZ1AcKum5MukHKbrR3lk0CQB6jpR3Gd57wdMYtd3T4fTo92v7M
+NFPgkTFum3LEGVoH0FvCpZI6+LG/qfqr0T6lFmgEBjcYzHDoq4IVBWdDiyqP
+aHuWir5XO9o6DBI6Gb+dzU/O2v/pZpLW08Evb4fTQf/kTJzM3vRGI95Mi4cb
+szeTt6P+4+rRElQeD276g3Q47n2AD+bdyeR2Ppzc9EYnqRb0daFQCapbQy+o
+Ck0rVSi8XrQlvrq6pfOfzngiENciPn3az4nPn1sm21JjjCv09wACGSZLSDIE
+UdZGS2zO5s2t7ouvupgATJoZT/qDUbL5Uq9CPHky6KOyAd6KpMXGFkYxtSuG
+EXVgr2o8r2nYu+kxqPdPn8LzKf3qGuZc6hE4h7KjrtIcOcXpHJOG+u2kEeJF
+pZfQ1c9ieDMbTOd388H7+d31dDK+ux6OBoc3NM2nTsRcAMLixY8PVskjJI6h
+bBp+Vr7XH0bnf7lrkYHCeTLMDpjk3+38Zb83H3R4rH7jvsXqCk3QeBXadiTM
+DmOsDUw3eIYCEFwiOIbHVxPYp32W9eMMhlX6FIn/5kn4vSf6nR+a7kX3D0yd
+60etJeXxI3EstsPdpB0Rv5Dn3mMrex0SGdFthSdJtPJun9KHX3pyDh88R1x7
+vBzWsmgtGm9zNsjXMj1IH2uT48VmTPP/cYRvDPDT7h2xiN7jdwCZyeKPYN3v
+wLGi8273HF9YtIUkMQddkR6RxY4VpTspO9YvYzEczK+z6WQ0yqCcbDbvzYez
++fBqRqntbTuSznrFvXVbo8r2uxHdfqfSINgodAMiiKpqDLt9n8T9If37W7K9
+WnFaGI5C/AO7OKUriQoAAA==
 
 -->
 
