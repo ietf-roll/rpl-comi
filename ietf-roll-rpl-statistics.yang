@@ -5,6 +5,13 @@ module ietf-roll-rpl-statistics {
     "urn:ietf:params:xml:ns:yang:ietf-roll-rpl-statistics";
   prefix "rpl";
 
+  import ietf-inet-types {
+    prefix inet;
+    description "This import statement is only present to access
+       the ietf-inet-types extension defined in RFC 6021.";
+    reference "RFC 6021: Common YANG Data Types;";
+  }
+
   organization
    "IETF ROLL Working Group";
 
@@ -38,7 +45,7 @@ module ietf-roll-rpl-statistics {
       description "A routing node has a parent and a bunch of children";
 
       leaf parent-node {
-        type ipv6;
+        type inet:ipv6-address;
 	description "The current parent node";
       }
     }
