@@ -1,0 +1,46 @@
+module ietf-roll-rpl-statistics {
+  yang-version 1.1;
+
+  namespace
+    "urn:ietf:params:xml:ns:yang:ietf-roll-rpl-statistics";
+  prefix "rpl";
+
+  organization
+   "IETF ROLL Working Group";
+
+  contact
+   "WG Web:   <http://tools.ietf.org/wg/roll/>
+    WG List:  <mailto:roll@ietf.org>
+    Author:   Michael Richardson
+              <mailto:mcr+ietf@sandelman.ca>";
+
+  description
+   "This module defines a YANG module for reporting statistics
+    from a ROLL routing node.
+
+    The key words 'MUST', 'MUST NOT', 'REQUIRED', 'SHALL', 'SHALL NOT',
+    'SHOULD', 'SHOULD NOT', 'RECOMMENDED', 'MAY', and 'OPTIONAL' in
+    the module text are to be interpreted as described in RFC 2119.";
+
+  revision "YYYY-MM-DD" {
+    description
+     "Initial version";
+    reference
+     "RFC XXXX: RPL management statistics in COMI format";
+  }
+
+  // Grouping defined for future usage
+  grouping roll-rpl-statistic {
+    description
+      "Grouping to allow reuse/extensions in future work.";
+
+    container rpl-statistics {
+      description "A routing node has a parent and a bunch of children";
+
+      leaf parent-node {
+        type ipv6;
+	description "The current parent node";
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+module: ietf-roll-rpl-statistics
+
+  grouping roll-rpl-statistic
+    +---- rpl-statistics
+       +---- parent-node?   ipv6

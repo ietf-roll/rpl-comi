@@ -1,0 +1,120 @@
+---
+title: RPL management statistics in COMI format
+abbrev: rpl-comi
+docname: draft-richardson-roll-rpl-comi-00
+
+# stand_alone: true
+
+ipr: trust200902
+area: Internet
+wg: 6tisch Working Group
+kw: Internet-Draft
+cat: info
+
+coding: us-ascii
+pi:    # can use array (if all yes) or hash here
+  toc: yes
+  sortrefs:   # defaults to yes
+  symrefs: yes
+
+author:
+
+
+- ins: M. Richardson
+  name: Michael Richardson
+  org: Sandelman Software Works
+  email: mcr+ietf@sandelman.ca
+
+-- - ins: P. van der Stok
+--  name: Peter van der Stok
+--  org: vanderstok consultancy
+--  email: consultancy@vanderstok.org
+
+normative:
+  RFC2119:
+  RFC6550:
+  I-D.ietf-core-yang-cbor:
+  I-D.ietf-core-sid:
+  I-D.ietf-core-object-security:
+
+informative:
+  I-D.ietf-netmod-yang-tree-diagrams:
+
+--- abstract
+
+This document defines a YANG model for retrieving RPL statistics from
+a 6LR or 6LBR using COMI.  An OSCORE context is assumed to protect
+the statistics.   The YANG model is translated to SIDs and is extensible.
+
+--- middle
+
+# Introduction
+
+Determining the structure of a production RPL DODAG has so far involved proprietary
+data collection mechanisms.  This has hampered to development of common visualization
+tools, which has resulted in researchers investigating the behaviour of only a
+small number of implementations, often in unrealistic simulation environments.
+
+MORE.
+
+# Terminology          {#Terminology}
+
+The following terms are defined in ....
+
+# Requirements Language {#rfc2119}
+
+In this document, the key words "MUST", "MUST NOT", "REQUIRED",
+"SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY",
+and "OPTIONAL" are to be interpreted as described in BCP 14, RFC 2119
+{{RFC2119}} and indicate requirement levels for compliant STuPiD
+implementations.
+
+# YANG MODEL for RPL statistics
+
+((EDNOTE: it is unclear if there is further IANA work))
+
+## Voucher Request artifact
+
+### Tree Diagram
+
+<figure>
+INSERT_TEXT_FROM_FILE rpl-comi-tree.txt END
+</figure>
+
+### SID values
+
+<figure>
+INSERT_TEXT_FROM_FILE rpl-comi-sid.txt END
+</figure>
+
+### YANG Module
+
+Statistics:
+
+<figure>
+INSERT_TEXT_FROM_FILE rpl-comi@DATE.yang END
+</figure>
+
+# IANA Considerations
+
+## The YANG Module Names Registry
+
+This document registers a YANG modules in the YANG Module Names
+registry [RFC6020].  Following the format defined in [RFC6020], the
+the following registration is requested:
+
+      name:         ietf-roll-rpl-statistics
+      namespace:    urn:ietf:params:xml:ns:yang:ietf-roll-rpl-statistics
+      reference:    RFC XXXX
+
+## The SID registry
+
+The SID range 1001100 was allocated by comi.space to the IETF-ROLL-RPL-STATISTICS
+yang module.
+
+# Acknowledgements
+
+We are very grateful to X and Y and Z.
+
+# Changelog
+
