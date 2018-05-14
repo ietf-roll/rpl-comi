@@ -1,0 +1,8 @@
+           
+      SID Assigned to
+--------- -------------------------------------------------- 
+  1001201 module ietf-inet-types
+  1001200 module ietf-roll-rpl-statistics
+  1001202 data .../ietf-roll-rpl-statistics:rpl-statistics
+  1001203 data .../parent-node
+           

@@ -2,4 +2,4 @@ module: ietf-roll-rpl-statistics
 
   grouping roll-rpl-statistic
     +---- rpl-statistics
-       +---- parent-node?   ipv6
+       +---- parent-node?   inet:ipv6-address
